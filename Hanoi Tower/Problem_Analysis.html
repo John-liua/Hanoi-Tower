@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hanoi:Problem Analysis</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="我的主页">
+    <meta name="keywords" content="浏览器主页">
+    <link rel="stylesheet" href="css.css" type="text/css" />
+</head>
+
+<body>
+    <!-- wrap starts here -->
+    <div class="wrap clearfloat">
+        <!--header -->
+        <div class="header clearfloat">
+            <h1 class="logo-text"><a href="History_and_Rule.html" title="">Hanoi Problem</a></h1>
+            <img src="images/Headernanoi.png" style="position: relative;left:635px;right: 10px;">
+            <p class="slogan">Stay Hungry Stay Foolish</p>
+            <!--header ends-->
+        </div>
+        <!-- navigation starts-->
+        <div class="nav clearfloat">
+            <ul>
+                <li><a href="History_and_Rule.html">History and Rule</a></li>
+                <li class="current"><a href="Problem_Analysis.html">Problem Analysis</a></li>
+                <li><a href="Triangle.html">Scherpinsky Triangle</a></li>
+                <li><a href="Play.html">Play</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+            </ul>
+            <!-- navigation ends-->
+        </div>
+        <!-- use starts-->
+        <p style="font-weight: 900;">Problem Analysis</p>
+        <p>
+            For such a problem, it is impossible for anyone to directly write down every step of moving theplate, but we can use the following method to solve it.
+        </P>
+        <p>
+            Set the number of moving plates as N, in order to move the n plates from rod A to rod C, you can do the following three steps:
+        </p>
+        <p>
+            (1) With rod C as the intermediary, move plates 1 to N-1 from rod A to rod B;
+        </p>
+        <P>
+            (2) Move the no. N remaining in rod A to rod C;
+        </P>
+        <P>
+            (3) With A rod as the intermediary; Move plates 1 to N-1 from rod B to rod C.
+        </P>
+        <img class="hanoi2" src="images/hanoi2.png" alt="Hanoi2">
+        <P>
+            This solved the problem, but in practice, only the second step can be done directly, and the first and third steps become the new problem of movement. <strong><font color="#95BC52">The essence of the above operation is to transform the problem of moving N plates into moving N-1 plates.</strong></font>How to solve the first and third steps?
+        </P>
+        <P>
+            In fact, the above method assumes that the number of plates is n, which can be any number, and the method also works for moving n-1 plates. Therefore, according to the above method, the problem of n-1 plates moving from rod A to rod B (the first step)
+            or from rod B to rod C (the third step) can be solved. Now, the problem goes from moving n plates to moving n minus 2 plates.
+        </P>
+        <P>
+            According to this principle, the original problem can be transformed into a solution for moving N-2, N-3, ...3, 2, until the operation of moving one plate, while the operation of moving one plate can be done directly.
+        </P>
+        <P>
+            At this point, our mission is truly accomplished. The method of solving complex problems with simple problems and known operations is <strong><font color="#95BC52">recursion</font></strong>.
+        </P>
+        <img class="hanoi3" src="images/hanoi3.gif">
+        <p></p>
+        <br>
+        <p style="font-weight: 900;" text-align="right">Reference</p>
+        <p>
+            <a href="https://blog.csdn.net/qq_35423154/article/details/101537789">[1] The solution to the tower of Hanoi (Recursion) </a>
+        </p>
+        <p>
+            <a href="https://romek.info/games/biblio2.pdf">
+                [2] The Tower of Hanoi: A Bibliography,September
+            </a>
+        </p>
+        <div class="footer clearfloat"></div>
+        <!-- wrap ends here -->
+    </div>
+</body>
+
+</html>
