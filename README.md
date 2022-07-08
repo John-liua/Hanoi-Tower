@@ -60,5 +60,5 @@ Press “FromXtoY” buttons to move the numbers
 Do as above until you hear “Win!”
 
 ## **Workflow of visualization game**
-![This is an image](![图片1](https://user-images.githubusercontent.com/89292585/177950563-28c8f41c-687a-4e09-81f0-d86013b86576.png)
-)
+![图片1](https://user-images.githubusercontent.com/89292585/177950563-28c8f41c-687a-4e09-81f0-d86013b86576.png)
+
