@@ -1,8 +1,8 @@
 # Hanoi-Tower
 This is a website about the tower of Hanoi.
 ## **Workflow of navigation part**
-Only Mouse with Eyesight
-See the top navigation.
+**Only Mouse with Eyesight**
+'1. 'See the top navigation.
 Move mouse over the navigation bar with content you want.
 Notice the color of the font and border change.
 Click it and you can see the content you want.
